@@ -1,0 +1,28 @@
+{
+  "name": "resource-guru-refactoring",
+  "version": "1.0.0",
+  "description": "refactoring an expression tree ",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha ./test/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entymon/resource-guru-refactoring.git"
+  },
+  "keywords": [
+    "refactoring",
+    "example"
+  ],
+  "author": "pawel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/entymon/resource-guru-refactoring/issues"
+  },
+  "homepage": "https://github.com/entymon/resource-guru-refactoring#readme",
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "mocha": "^9.1.3"
+  }
+}
