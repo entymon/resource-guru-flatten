@@ -1,11 +1,19 @@
 /**
- * @param {*} array nested
+ * @param {*} arrays nested
  * @returns array flatten
  */
-const flatten = (array) => {
-  return [1, 2, 3, 4]
+
+const flatten1 = (arrays) => {
+  return arrays.flat(Infinity)
+}
+
+const flatten2 = (arr) => {
+  return arr.reduce((flat, toFlatten) => {
+    return flat.concat(Array.isArray(toFlatten) ? flatten2(toFlatten) : toFlatten);
+  }, []);
 }
 
 export {
-    flatten
+    flatten1,
+    flatten2
 }
