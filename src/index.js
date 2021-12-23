@@ -13,9 +13,17 @@ const flatten2 = (arrays) => {
   }, []);
 }
 
+
 const flatten3 = (arrays) => {
   const flat = [];
+  const flatNestedArray = () => {
+    let keyNumber = 0
+    while (keyNumber < unFlattenArray.length) {
 
+      keyNumber++
+    }
+  }
+  flatNestedArray(arrays)
   return flat;
 }
 
