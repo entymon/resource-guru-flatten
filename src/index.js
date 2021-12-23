@@ -19,9 +19,8 @@ const flatten3 = (arrays) => {
   const flatNestedArray = (unFlattenArray) => {
     let keyNumber = 0
     while (keyNumber < unFlattenArray.length) {
-      const value = unFlattenArray[counter]; // value can be: [1, 2] or 1
-      (Array.isArray(value)) ? 'flat element' : flat.push(value)
-
+      const value = unFlattenArray[keyNumber]; // value can be: [1, 2] or 1
+      (Array.isArray(value)) ? flatNestedArray(value) : flat.push(value)
       keyNumber++
     }
   }
